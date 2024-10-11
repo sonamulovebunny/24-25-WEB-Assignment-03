@@ -1,0 +1,43 @@
+body {
+  background-color: #585858;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.button {
+  width: 300px;
+  height: 40px;
+  background-color: #03c75a;
+  border-radius: 5px;
+  border: 1px solid #03c75a;
+  margin: 40px auto;
+  color: white;
+}
+
+.logo {
+  width: 400px;
+  height: 180px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  margin-top: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+hr {
+  color: #585858;
+}
