@@ -49,14 +49,14 @@ label {
   font-weight: bold;
 }
 
-.button {
+#button {
   width: 350px;
   height: 45px;
-  background-color: #03c75a;
+  background-color: #999999;
+  color: black;
   border-radius: 5px;
-  border: 1px solid #03c75a;
+  border: none;
   margin: 40px auto;
-  color: white;
 }
 
 .yakgwan {

@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>과제 2</title>
     <link rel="stylesheet" href="as_2.css" />
+    <script>
+      function check() {
+        var ch1 = document.getElementById("ch1").checked;
+        var ch2= document.getElementById("ch2").checked;
+        var success = document.getElementById("button");
+
+        if (ch1 && ch2) {
+          button.style.backgroundColor = "#03c75a"; 
+          button.disabled = false;
+        } else {
+          button.style.backgroundColor = ""; 
+          button.disabled = true;
+        }
+      }
+      function login() {
+        window.location.href = "success.html"; 
+      }
+
+    </script>
   </head>
   <body>
     <div>
       <div class="login">
         <img src="./logo.jpeg" alt="logo" class="logo" />
+        <form onsubmit="login()">
         <div class="form">
             <div class="yakgwan">
-        		<input type="checkbox" class="check">
+        		<input type="checkbox" class="check" id="ch1"  onchange="check()">
         		<label for="check1"><span class="pilsu">[필수]</span> 가입약관</label>
                 <div class="text">
                     GDG서비스를 이용하시거나 서비스 회원으로 가입하실 경우 여러
@@ -20,7 +40,7 @@
                 </div>
         	</div>
             <div class="yakgwan">
-        		<input type="checkbox" class="check">
+        		<input type="checkbox" class="check" id="ch2"  onchange="check()">
         		<label for="check2"><span class="pilsu">[필수]</span>가입약관</label>
         	
                 <div class="text">
@@ -28,9 +48,12 @@
                 </div>
 
             </div>
-    </div>
-    <button type="button" class="button">
+        </div>
+    
+    <button type="button" id="button" onclick="login()" disabled>
         로그인
     </button>
+  </form>
+</div>
   </body>
 </html>
