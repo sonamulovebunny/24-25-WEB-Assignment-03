@@ -4,6 +4,10 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  /* .login에 align-item: center를 작성해도 안되길래 margin으로 위치를 조정했었음
+    => 부모요소인 body에 뷰포트 높이를 100으로 설정하여 해결 (스크롤이 생겨서 overflow를 hidden으로 설정*/
 }
 
 .login {
@@ -15,7 +19,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-top: 100px;
 }
 
 #button {
